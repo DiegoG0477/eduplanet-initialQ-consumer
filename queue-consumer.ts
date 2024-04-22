@@ -7,13 +7,13 @@ const PASSWORD = encodeURIComponent("guest12345");
 const HOSTNAME = "44.217.29.217";
 const PORT = 5672
 const RABBITMQ_DATA = "Initial";
-const WEBSOCKET_SERVER_URL = "http://184.72.246.90";
+const WEBSOCKET_SERVER_URL = "http://184.72.246.90:4000/";
 
 let socketIO: Socket;
 
 async function sendDatatoAPI(data: any) {
   //API PAYMENT
-  const apiUrl = 'http://44.221.150.52/medical/data';
+  const apiUrl = 'http://44.221.150.52:4000/payment/validate';
 
   const requestData = {
     body: JSON.stringify(data),
