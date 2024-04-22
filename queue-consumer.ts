@@ -35,6 +35,7 @@ async function connect() {
       if (err) throw new Error(err);
 
       conn.createChannel((errChanel: any, channel: amqp.Channel) => {
+        console.log('connected to RabbitMQ');
         if (errChanel) throw new Error(errChanel);
 
         channel.assertQueue(RABBITMQ_DATA, {durable:true, arguments:{"x-queue-type":"quorum"}});
