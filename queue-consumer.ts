@@ -24,7 +24,7 @@ async function sendDatatoAPI(data: any) {
     body: requestData.body,
   });
 
-  console.log('API DATA RESPONSE: ',response.status);
+  console.log('API DATA RESPONSE: ',response);
 }
 
 async function connect() {

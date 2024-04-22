@@ -62,7 +62,7 @@ function sendDatatoAPI(data) {
                         })];
                 case 1:
                     response = _a.sent();
-                    console.log('API DATA RESPONSE: ', response.status);
+                    console.log('API DATA RESPONSE: ', response);
                     return [2 /*return*/];
             }
         });
